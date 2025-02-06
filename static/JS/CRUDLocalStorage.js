@@ -21,9 +21,12 @@ export const CRUDLocalStorage = {
     alert("Produto adicionado ao carrinho com sucesso!");
   },
 
-  getProductsOncCarArray: () => {
+  getProductsOncCar: (number) => {
     let productsCarArray = JSON.parse(localStorage.getItem("productsCarArray")) || [];
-
-    return productsCarArray;
+    if(number){
+      return productsCarArray.length;
+    }else{
+      return productsCarArray;
+    }
   }
 };

@@ -19,6 +19,7 @@ async function fetchProducts(){
 
 async function displayProducts(){
     try{
+        shoppingCarNumber();
         const productsList = await fetchProducts();
         if(!!productsList.length){
             let productsHTML = '';
@@ -44,12 +45,19 @@ async function displayProducts(){
                         price: `${product.price}`
                     };
                     CRUDLocalStorage.addProductToCar(selectedProduct);
+                    shoppingCarNumber();
                 });
             });
         }
+
     } catch(error){
         console.error(error);
     }
 }
+
+function shoppingCarNumber(){
+    const products = CRUDLocalStorage.getProductsOncCar(true);
+    document.getElementById('carQuantity').innerText = products;
+};
 
 window.onload = displayProducts;

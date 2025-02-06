@@ -44,6 +44,7 @@ header {
     grid-template-columns: 5% 1fr 25%;
     grid-template-areas: "image title navbar";
     background-color: var(--blue);
+    z-index: 1000;
 }
 
 #icon2 {

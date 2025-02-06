@@ -36,3 +36,18 @@ main {
 .productCard p {
     text-align: center;
 }
+
+header {
+    grid-template-columns: 5% 2% 1fr 25%;
+    grid-template-areas: "image carIcon title navbar";
+}
+
+#carQuantity {
+    height: fit-content;
+    grid-area: carIcon;
+    border: 2px solid var(--black);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    text-align: center;
+    font-weight: bold;
+}
