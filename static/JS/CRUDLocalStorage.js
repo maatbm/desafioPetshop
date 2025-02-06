@@ -34,5 +34,14 @@ export const CRUDLocalStorage = {
     }else{
       return productsCarArray;
     }
+  },
+
+  removeProductShoppingCar: (productToRemove) => {
+    let productsCarArray = JSON.parse(localStorage.getItem("productsCarArray"));
+    let existingProduct = productsCarArray.findIndex((product) => product.title === productToRemove);
+    productsCarArray.splice(existingProduct, 1);
+    localStorage.setItem("productsCarArray", JSON.stringify(productsCarArray));
+
+    alert("Produto removido do carrinho com sucesso!");
   }
 };
