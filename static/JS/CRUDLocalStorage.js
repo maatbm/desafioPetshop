@@ -12,4 +12,18 @@ export const CRUDLocalStorage = {
 
     return clientsArray;
   },
+
+  addProductToCar: (newproduct) => {
+    let productsCarArray = JSON.parse(localStorage.getItem("productsCarArray")) || [];
+    productsCarArray.push(newproduct);
+    localStorage.setItem("productsCarArray", JSON.stringify(productsCarArray));
+
+    alert("Produto adicionado ao carrinho com sucesso!");
+  },
+
+  getProductsOncCarArray: () => {
+    let productsCarArray = JSON.parse(localStorage.getItem("productsCarArray")) || [];
+
+    return productsCarArray;
+  }
 };

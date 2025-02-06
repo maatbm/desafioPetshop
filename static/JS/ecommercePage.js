@@ -1,3 +1,5 @@
+import { CRUDLocalStorage } from "./CRUDLocalStorage.js";
+
 async function fetchProducts(){
     try{
         let response = await fetch('/static/JS/productsData.json');
@@ -30,7 +32,20 @@ async function displayProducts(){
                     </div>
                 `;
             });
+
             document.getElementById('main').innerHTML = productsHTML;
+
+            productsList.forEach((product, index) => {
+                document.getElementById(`${index}`).addEventListener('click', () => {
+                    let selectedProduct = {
+                        image: `${product.image}`,
+                        title: `${product.title}`,
+                        description: `${product.description}`,
+                        price: `${product.price}`
+                    };
+                    CRUDLocalStorage.addProductToCar(selectedProduct);
+                });
+            });
         }
     } catch(error){
         console.error(error);
