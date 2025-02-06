@@ -42,7 +42,8 @@ async function displayProducts(){
                         image: `${product.image}`,
                         title: `${product.title}`,
                         description: `${product.description}`,
-                        price: `${product.price}`
+                        price: `${product.price}`,
+                        quantity: 1
                     };
                     CRUDLocalStorage.addProductToCar(selectedProduct);
                     shoppingCarNumber();

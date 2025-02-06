@@ -13,11 +13,17 @@ export const CRUDLocalStorage = {
     return clientsArray;
   },
 
-  addProductToCar: (newproduct) => {
+  addProductToCar: (newProduct) => {
     let productsCarArray = JSON.parse(localStorage.getItem("productsCarArray")) || [];
-    productsCarArray.push(newproduct);
-    localStorage.setItem("productsCarArray", JSON.stringify(productsCarArray));
+    let existingProduct = productsCarArray.find((product) => product.title === newProduct.title);
 
+    if (existingProduct) {
+      existingProduct.quantity += 1;
+    } else {
+      productsCarArray.push(newProduct);
+    }
+
+    localStorage.setItem("productsCarArray", JSON.stringify(productsCarArray));
     alert("Produto adicionado ao carrinho com sucesso!");
   },
 
