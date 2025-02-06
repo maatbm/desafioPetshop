@@ -20,7 +20,6 @@
     --lightPurple: #BB5BE4;
     --white: #F7F7F7;
     --purple: #5320A6;
-
 }
 
 body {
@@ -29,7 +28,7 @@ body {
     overflow-x: hidden;
     background-color: var(--bodyBackgroundColor);
     padding-top: 8rem;
-    background-image: url('../assets/backgroundImage.png');
+    background-image: url('../assets/global/backgroundImage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
