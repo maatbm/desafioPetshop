@@ -2,7 +2,7 @@ import { CRUDLocalStorage } from "./CRUDLocalStorage.js";
 
 async function fetchProducts(){
     try{
-        let response = await fetch('/static/JS/productsData.json');
+        let response = await fetch('/desafioPetshop/static/JS/productsData.json');
         if(!response.ok){
             throw new Error('Erro ao carregar os produtos: ' + response.statusText);
         }

@@ -1,48 +1,48 @@
 [
     {
-        "image": "/static/assets/products/aspiradorEletrico.webp",
+        "image": "/desafioPetshop/static/assets/products/aspiradorEletrico.webp",
         "title": "Aspirador de pelo elétrico",
         "description": "Aspirador de pelo elétrico para te poupar trabalho e fornecer agilidade, eficiência e qualidade",
         "price": "50,00"
     },
     {
-        "image": "/static/assets/products/capabanco.jpg",
+        "image": "/desafioPetshop/static/assets/products/capabanco.jpg",
         "title": "Capa para banco traseiro",
         "description": "Capa para banco traseiro do seu veículo, seu pet vai ficar confortável e seguro e seu carro protegido.",
         "price": "220,00"
     },
     {
-        "image": "/static/assets/products/coleiraRastreadora.webp",
+        "image": "/desafioPetshop/static/assets/products/coleiraRastreadora.webp",
         "title": "Coleira rastreadora",
         "description": "Com esta coleira, você não vai correr o risco de perder seu pet, obtenha a localização dele em tempo real!",
         "price": "150,00"
     },
     {
-        "image": "/static/assets/products/comedouroPeixe.webp",
+        "image": "/desafioPetshop/static/assets/products/comedouroPeixe.webp",
         "title": "Comedouro automático para peixe",
         "description": "Com este comedouro automático seu peixe nunca vai sentir fome e você não precisará se preocupar em alimentá-lo.",
         "price": "230,00"
     },
     {
-        "image": "/static/assets/products/foneOuvido.webp",
+        "image": "/desafioPetshop/static/assets/products/foneOuvido.webp",
         "title": "fone anti ruído",
         "description": "Seu cãozinho não irá mais sofrer com barulhos altos.",
         "price": "49,90"
     },
     {
-        "image": "/static/assets/products/gaiolaPeriquito.webp",
+        "image": "/desafioPetshop/static/assets/products/gaiolaPeriquito.webp",
         "title": "Gaiola para periquito",
         "description": "Uma gaiola simples, mas que vai atender muit bem a necessidade de espaço do seu pássaro.",
         "price": "149,99"
     },
     {
-        "image": "/static/assets/products/lancaBola.webp",
+        "image": "/desafioPetshop/static/assets/products/lancaBola.webp",
         "title": "Lançador de bolinhas automático",
         "description": "Este lançador de bolinhas automático vai atender as necessidades intensivas de brincadeiras do seu pet.",
         "price": "39,90"
     },
     {
-        "image": "/static/assets/products/luvaTiraPelos.jpg",
+        "image": "/desafioPetshop/static/assets/products/luvaTiraPelos.jpg",
         "title": "Luva tira pelos",
         "description": "Para você esfregar no seu pet e tirar todos os pelos soltos.",
         "price": "19,90"
