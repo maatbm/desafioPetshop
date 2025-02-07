@@ -158,24 +158,27 @@ option {
     border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 895px){
-    #homePageContainer{
+@media screen and (max-width: 895px) {
+    #homePageContainer {
         display: flex;
         flex-direction: column;
     }
+}
 
-    @media screen and (max-width: 481px){
-        .imgGenericHome{
-            width: 50%;
-        }
-        .cardContainerHome h2{
-            font-size: 1.3rem;
-        }
-        .cardContainerHome p{
-            font-size: 0.8rem;
-        }
-        fieldset{
-            width: 90%;
-        }
+@media screen and (max-width: 481px) {
+    .imgGenericHome {
+        width: 50%;
+    }
+
+    .cardContainerHome h2 {
+        font-size: 1.3rem;
+    }
+
+    .cardContainerHome p {
+        font-size: 0.8rem;
+    }
+
+    fieldset {
+        width: 90%;
     }
 }

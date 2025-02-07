@@ -68,7 +68,7 @@ footer {
     left: 0;
 }
 
-@media screen and (max-width:781px) {
+@media screen and (max-width: 781px) {
     .clientsPageContainer {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -84,15 +84,14 @@ footer {
     .clientFullDataCard {
         width: 70%;
     }
+}
 
-    @media screen and (max-width: 481px) {
-        .clientsPageContainer {
-            grid-template-columns: 1fr;
-        }
-
-        .clientFullDataCard {
-            width: 90%;
-        }
+@media screen and (max-width: 481px) {
+    .clientsPageContainer {
+        grid-template-columns: 1fr;
     }
 
+    .clientFullDataCard {
+        width: 90%;
+    }
 }
