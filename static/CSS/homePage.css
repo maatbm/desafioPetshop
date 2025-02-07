@@ -163,6 +163,10 @@ option {
         display: flex;
         flex-direction: column;
     }
+
+    body {
+        padding-top: 6rem;
+    }
 }
 
 @media screen and (max-width: 481px) {
