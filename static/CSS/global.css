@@ -130,25 +130,26 @@ footer {
         font-size: 0.7rem;
     }
 
-    @media screen and (max-width: 481px) {
-        body {
-            padding-top: 3rem;
-        }
+}
 
-        header {
-            padding: 0.3rem;
-        }
+@media screen and (max-width: 481px) {
+    body {
+        padding-top: 3rem;
+    }
 
-        .headerButton {
-            font-size: 0.5rem;
-        }
+    header {
+        padding: 0.3rem;
+    }
 
-        #titleHeader {
-            font-size: 1.5rem;
-        }
+    .headerButton {
+        font-size: 0.5rem;
+    }
 
-        footer {
-            font-size: 0.4rem;
-        }
+    #titleHeader {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.4rem;
     }
 }
