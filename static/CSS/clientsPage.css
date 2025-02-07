@@ -39,7 +39,7 @@
     display: none;
 }
 
-.clientFullDataCard{
+.clientFullDataCard {
     width: 35%;
     height: fit-content;
     padding: 1rem;
@@ -50,20 +50,49 @@
     gap: 0.3rem;
 }
 
-.clientFullDataCard h2{
+.clientFullDataCard h2 {
     margin-top: 0.5rem;
     color: var(--darkPurple);
 }
 
-.clientFullDataCard p{
+.clientFullDataCard p {
     color: var(--purple);
     font-size: 1rem;
     font-weight: bold;
 }
 
-footer{
+footer {
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
+}
+
+@media screen and (max-width:781px) {
+    .clientsPageContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clientCard h2 {
+        font-size: 1rem;
+    }
+
+    .clientCard h3 {
+        font-size: 0.8rem;
+    }
+
+    .clientFullDataCard {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 481px) {
+        .clientsPageContainer {
+            grid-template-columns: 1fr;
+        }
+
+        .clientFullDataCard {
+            width: 90%;
+        }
+    }
+
 }

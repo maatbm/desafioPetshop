@@ -22,3 +22,9 @@ footer {
     background-color: var(--purple);
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 481px){
+    body{
+        padding-bottom: 4.7rem;
+    }
+}

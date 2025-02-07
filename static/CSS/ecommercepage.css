@@ -38,7 +38,7 @@ main {
 }
 
 header {
-    grid-template-columns: 5% 2% 1fr 30%;
+    grid-template-columns: 5% 3% 1fr 40%;
     grid-template-areas: "image carIcon title navbar";
 }
 
@@ -50,4 +50,33 @@ header {
     padding: 0.3rem;
     text-align: center;
     font-weight: bold;
+}
+
+@media screen and (max-width: 781px) {
+    header {
+        grid-template-columns: 5% 5% 1fr 40%;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .productCard h3 {
+        font-size: 1rem;
+    }
+
+    .productCard p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #carQuantity {
+        font-size: 0.5rem;
+        padding: 0.2rem;
+    }
 }
