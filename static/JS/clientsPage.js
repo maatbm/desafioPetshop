@@ -10,6 +10,7 @@ const animalAge = document.getElementById('animalAge');
 const animalSize = document.getElementById('animalSize');
 
 function displayClients(){
+    document.getElementById('clientsButton').classList.add('hovered')
     let clients = CRUDLocalStorage.getClientsArray();
     let clientsHTML = '';
     if(!!clients.length){

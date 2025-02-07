@@ -18,6 +18,7 @@ async function fetchProducts(){
 }
 
 async function displayProducts(){
+    document.getElementById('ecommerceButton').classList.add('hovered')
     try{
         shoppingCarNumber();
         const productsList = await fetchProducts();

@@ -27,3 +27,5 @@ document.getElementById('formClientAnimal').addEventListener('submit', (event) =
     window.location.reload();
 });
 
+window.onload = () => {document.getElementById('homeButton').classList.add('hovered')}
+
